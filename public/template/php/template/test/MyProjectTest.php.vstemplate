@@ -1,0 +1,13 @@
+<?php
+use PHPUnit\Framework\TestCase;
+use <%= vendorNamespace %>\<%= rootDirStudly %>\<%= rootDirStudly %>;
+
+class <%= rootDirStudly %>Test extends TestCase
+{
+    public function test<%= rootDirStudly %>()
+    {
+        $<%= rootDirStudly %> = new <%= rootDirStudly %>();
+        $test = $<%= rootDirStudly %>->sayHello('Asshole');
+        $this->assertEquals('Hello Asshole' . PHP_EOL, $test);
+    }
+}

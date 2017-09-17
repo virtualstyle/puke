@@ -1,0 +1,38 @@
+{
+    "name": "@virtualstyle/puke",
+    "version": "0.1.0",
+    "description": "Puke is a boilerplate scaffolding system for rapidly producing project structures and stub files, including dev tools and automation of code formatting, testing, etc..",
+    "author": "Rob Wood <rob@virtualstyle.us> (https://virtualstyle.us)",
+    "license": "MIT",
+    "directories": {},
+    "bin": {
+        "puke": "index.js"
+    },
+    "scripts": {
+        "install": "mkdir -p ~/.puke && cp -n -r public/template/php ~/.puke && cp -n -r public/template/node ~/.puke && cp -n -r public/template/common ~/.puke && mkdir -p ~/.puke/config && cp -n -r config ~/.puke",
+        "code:jshint": "jshint bin/puke.js lib config",
+        "code:jscs": "jscs -x bin/puke.js lib config",
+        "code": "yarn run code:jshint && yarn run code:jscs",
+        "docs": "node_modules/.bin/jsdoc -c .jsdoc",
+        "test": "mocha -R spec test/*-test.js",
+        "coverage": "nyc --reporter=text mocha -R spec test/*-test.js"
+    },
+    "dependencies": {
+        "@virtualstyle/config": "0.4.0",
+        "ascii-art": "1.4.2",
+        "clear": "0.0.1",
+        "clui": "^0.3.6",
+        "fs-extra": "4.0.1",
+        "inquirer": "3.2.3",
+        "string": "3.3.3",
+        "underscore.template": "0.1.7"
+    },
+    "devDependencies": {
+        "jscs": "3.0.7",
+        "jsdoc": "3.5.4",
+        "jshint": "2.9.5",
+        "mocha": "3.5.0",
+        "nyc": "11.2.1"
+    },
+    "preferGlobal": "true"
+}

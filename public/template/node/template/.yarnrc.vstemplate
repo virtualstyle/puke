@@ -1,0 +1,6 @@
+init-author-name "<%= name %>"
+init-author-email "<%= email %>"
+init-author-url "<%= url %>"
+init-version "<%= version %>"
+init-license <%= license %>
+save-prefix ""

@@ -1,0 +1,34 @@
+<?php
+/**
+ * Short description for file
+ *
+ * Long description for file (if any)...
+ *
+ * @author     <%= name %> <<%= email %>>
+ * @copyright  <%= copyRightYear %> <%= name %>
+ * @license    <%= license %>
+ * @link       https://github.com/<%= githubUserName %>/<%= projectName %>
+ */
+namespace <%= nameSpace %>;
+
+/**
+ * <%= nameSpace %>\<%= rootDirStudly %>Interface is a stub interface for
+ * scaffolding a PHP library project
+ *
+ * <%= nameSpace %>\<%= rootDirStudly %>Interface is an interface that
+ * provides a stub file to begin development.
+ *
+ */
+interface <%= rootDirStudly %>Interface
+{
+    /**
+     * Short description for function
+     *
+     * Long description for function (if any)...
+     *
+     * @method sayHello
+     * @param  string   $name A string passed in to use as a name
+     * @return string
+     */
+    public function sayHello(string $name);
+}

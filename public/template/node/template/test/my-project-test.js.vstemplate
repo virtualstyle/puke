@@ -1,0 +1,18 @@
+var assert = require('assert');
+var colors = require('colors');
+
+var <%= rootDirCamel %> = new (require('../lib/<%= rootDirKebab %>'))();
+
+describe('Testing <%= projectName %> package'.bold.underline, function () {
+
+    beforeEach(function () {});
+
+    it('<%= rootDirCamel %> is an object'.italic, function () {
+        assert(typeof <%= rootDirCamel %> === 'object');
+    });
+
+    it('<%= rootDirCamel %>.sayHello()'.italic, function () {
+        assert(<%= rootDirCamel %>.sayHello('World') === 'Hello World');
+    });
+
+});

@@ -1,0 +1,14 @@
+## <%= projectName %>
+
+#### Project Status & Docs:
+
+[![Build Status](https://travis-ci.org/<%= githubUserName %>/<%= rootDirKebab %>.svg?branch=master)](https://travis-ci.org/<%= githubUserName %>/<%= rootDirKebab %>)
+[![Coverage Status](https://coveralls.io/repos/github/<%= githubUserName %>/<%= rootDirKebab %>/badge.svg?branch=master)](https://coveralls.io/github/<%= githubUserName %>/<%= rootDirKebab %>?branch=master)
+|
+[Coverage Reports](https://<%= githubUserName %>.github.io/<%= rootDirKebab %>/coverage)
+|
+[Docs](https://<%= githubUserName %>.github.io/<%= rootDirKebab %>/)
+___
+#### Project Info:
+
+<%= description %>

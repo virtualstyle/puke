@@ -1,0 +1,14 @@
+'use strict';
+/**
+ * <%= description %>
+ *
+ * @module <%= projectName %>
+ * @version <%= version %>
+ * @exports <%= rootDirCamel %>
+ * @license <%= license %>
+ * @copyright <%= copyRightYear %> <%= name %>
+ * @link https://github.com/<%= githubUserName %>/<%= projectName %>
+ *
+ */
+const <%= rootDirCamel %> = require('./lib/<%= rootDirKebab %>');
+module.exports = <%= rootDirCamel %>;

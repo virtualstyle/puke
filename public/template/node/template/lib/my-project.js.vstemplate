@@ -1,0 +1,27 @@
+'use strict';
+/**
+ * A class stubout from Puke Project Generator
+ */
+class <%= rootDirCamel %> {
+
+    /**
+     * Load our configuration using config module.
+     * @method constructor
+     * @param  {Object}    config An object with config values
+     */
+    constructor(config) {
+        this.config = require('@<%= githubUserName %>/config')(config || {});
+    }
+
+    /**
+     * A method to say hello
+     * @method sayHello
+     * @param  {string}   name  A name to say hello to
+     */
+    sayHello(name) {
+        return 'Hello ' + name;
+    }
+
+}
+
+module.exports = <%= rootDirCamel %>;

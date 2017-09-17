@@ -1,0 +1,58 @@
+<?php
+/**
+ * Short description for file
+ *
+ * Long description for file (if any)...
+ *
+ * PHP version 7.1
+ *
+ * LICENSE: MIT
+ *
+ * @author      <%= name %> <<%= email %>>
+ * @version     <%= version %>
+ * @copyright   <%= copyRightYear %> <%= name %>
+ * @license     <%= license %>
+ * @link        https://github.com/<%= githubUserName %>/<%= projectName %>
+ */
+namespace <%= nameSpace %>;
+
+use Exception;
+
+/**
+ * <%= nameSpace %>\<%= rootDirStudly %> is a stub class for scaffolding a PHP library project
+ *
+ * <%= nameSpace %>\<%= rootDirStudly %> is a class that provides a stub file to
+ * begin development.
+ *
+ */
+class <%= rootDirStudly %> implements <%= rootDirStudly %>Interface
+{
+    /**
+     * This constructor accepts an optional array of options to add to/
+     * override a base set of options.
+     *
+     * @method __construct
+     * @param array      $options optional array of options to add to/
+     *                            override a base set of options
+     */
+    public function __construct(array $options = [])
+    {
+        $options = array_merge(['someOption' => 'someValue'], $options);
+    }
+
+    /**
+     * Short description for function
+     *
+     * @inherit
+     * {@inherit}
+     * {@inheritdoc}
+     *
+     * @method sayHello
+     * @param  string   $name A string passed in to use as a name
+     * @return string
+     */
+    public function sayHello(string $name)
+    {
+        return "Hello $name" . PHP_EOL;
+    }
+}
